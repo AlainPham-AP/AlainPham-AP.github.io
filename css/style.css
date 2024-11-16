@@ -1,0 +1,57 @@
+body {
+	display: flex;
+}
+
+header#sidebar {
+	background: grey;
+	width: 25%;
+}
+main {
+	width: 75%;
+}
+
+article.project {
+	background: lightblue;
+}
+
+
+
+article.project header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: mediumpurple;
+	padding: 1.25em;
+}
+
+	article.project figure {
+		background: black;
+		width: 100%;
+		margin: 0;
+	}
+
+		article.project figure img{
+			width: 100%;
+		}
+
+	article.project header section {
+		padding: 0 1.25em;
+	}
+
+	article.project section.project-client-summary {
+		width: 45%;
+		background: darkred;
+	}
+		article.project section.project-client-summary h1 {
+			font-size: 2em;
+		}
+
+	article.project section.project-role-summary {
+		width: 30%;
+		background: springgreen;
+	}
+
+	article.project section.project-credits {
+		width: 25%;
+		background: darkorange;
+	}
