@@ -1,36 +1,51 @@
 body {
 	display: flex;
+	flex-flow: column wrap;
 	margin: 0;
 	padding: 0;
 }
 
 header#sidebar {
+	position: fixed;
 	background: #F9F9F9;
-	width: 25%;
+	width: 100%;
+	z-index: 999;
+	height: 10vh;
+	top: 0;
 }
 
 nav {
-	height: 100vh;
-	display: fixed;
-	top: 0;
-	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	background: cadetblue;
 }
 
 nav h1 {
-	position: fixed;
-	top:0;
-	margin: 1.5em;
+	margin: 0 0 0 1.25em;
+	padding: 0;
+	background: red;
 }
 
 nav ul {
-	position: fixed;
-	bottom:0;
-	margin: 1.5em;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1.25em;
+	margin: 0em 1.25em 0 0;
+
+}
+
+nav ul li {
+	background: deeppink;
+	padding: 0em;
+	list-style-type: none;
 }
 
 main {
-	width: 75%;
+	width: 100%;
 	background: yellow;
+	margin: 10vh 0 0 0;
 }
 
 figure {
@@ -56,43 +71,53 @@ article.project {
 	padding: 1.25em;
 }
 
-	article.project header {
-		display: flex;
-		flex-wrap: wrap;
-		background: mediumpurple;
-	}
+article.project header {
+	display: flex;
+	flex-wrap: wrap;
+	background: mediumpurple;
+}
 
 section#project-header-image {
 	width: 100%;
 	margin:0 0 1.25em 0;
 }
 
+
+
+
+
 section#project-summary {
 	width: 100%;
-	display:flex;
+	display: flex;
+	flex-flow: column wrap;
 	gap:1.25em;
 	margin: 0 0 1.25em 0;
 }
-	article.project div.project-client {
-		width: 45%;
-		background: darkred;
-		margin:0; 
-		padding:0;
-	}
-		article.project div.project-client h1 {
-			font-size: 2em;
-		}
 
-	article.project div.project-role {
-		width: 30%;
-		background: springgreen;
-	}
 
-	article.project div.project-credits {
-		width: 25%;
-		background: darkorange;
-	}
 
+div.project-client {
+	width: 100%;
+	background: darkred;
+	margin:0; 
+	padding:0;
+}
+
+div.project-client h1 {
+	font-size: 2em;
+	padding: 0;
+	margin: 0;
+}
+
+div.project-role {
+	width: 100%;
+	background: springgreen;
+}
+
+div.project-credits {
+	width: 100%;
+	background: darkorange;
+}
 
 
 
@@ -103,69 +128,41 @@ hr {
 
 section.project-details {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	background: royalblue;
 	margin: 1.25em 0 0 0;
 }
 
-	section.project-details div.project-images {
-		width: 66.66%;
-	}
+section.project-details div.project-images {
+	width: 100%;
+}
 
-	section.project-details div.project-description {
-		width: 33.33%;
-		box-sizing: border-box;
-		padding: 0 1.25em;
-		align-self: flex-start;
-		position: sticky;
-		top:0;
-	}
+section.project-details div.project-description {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 1.25em;
+	align-self: flex-start;
+}
 
 
 aside#project-directory {
 	width:100%;
 	box-sizing: border-box;
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:1.25em;
     padding: 1.25em;
     background: magenta;
 }
 
 
-
-
-/* specifically for home page on desktop */
-
 div#home-project-directory {
 	width:100%;
 	box-sizing: border-box;
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    background: magenta;
-}
-
-
-
-div#home-project-directory.row1 {
-	width:100%;
-	box-sizing: border-box;
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:0 1.25em;
-    padding: 1.25em 1.25em 0 1.25em;
-    background: red;
-}
-
-div#home-project-directory.row2 {
-	width:100%;
-	box-sizing: border-box;
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:0 1.25em;
+	display:flex;
+	flex-flow: column wrap;
+    background: lightseagreen;
     padding: 1.25em;
-    background: darkgreen;
 }
 
 
