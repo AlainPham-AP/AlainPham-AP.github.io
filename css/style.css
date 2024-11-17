@@ -10,21 +10,22 @@ header#sidebar {
 }
 
 nav {
-	height: 100%;
-	display:flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
+	height: 100vh;
+	display: fixed;
+	top: 0;
+	left: 0;
 }
 
 nav h1 {
-	position: sticky;
+	position: fixed;
 	top:0;
-	margin: 0;
+	margin: 1.5em;
 }
 
 nav ul {
-	position: sticky;
+	position: fixed;
 	bottom:0;
+	margin: 1.5em;
 }
 
 main {
@@ -39,7 +40,7 @@ figure {
 	padding: 0;
 }
 
-figure img{
+img {
 	width: 100%;
 	display: block;
 }
@@ -134,9 +135,9 @@ aside#project-directory {
 
 
 
-/* specifically for home page on desktop
+/* specifically for home page on desktop */
 
-aside#project-directory {
+div#home-project-directory {
 	width:100%;
 	box-sizing: border-box;
 	display: grid;
@@ -147,7 +148,7 @@ aside#project-directory {
 
 
 
-aside#project-directory.row1 {
+div#home-project-directory.row1 {
 	width:100%;
 	box-sizing: border-box;
 	display: grid;
@@ -157,7 +158,7 @@ aside#project-directory.row1 {
     background: red;
 }
 
-aside#project-directory.row2 {
+div#home-project-directory.row2 {
 	width:100%;
 	box-sizing: border-box;
 	display: grid;
@@ -167,4 +168,4 @@ aside#project-directory.row2 {
     background: darkgreen;
 }
 
-*/
+
