@@ -166,3 +166,9 @@ div#home-project-directory {
 }
 
 
+@media (min-width: 810px) {
+  body {
+ 	 color: red;	
+  }
+  
+}
