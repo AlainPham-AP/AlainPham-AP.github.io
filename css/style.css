@@ -159,8 +159,8 @@ aside#project-directory {
 div#home-project-directory {
 	width:100%;
 	box-sizing: border-box;
-	display:flex;
-	flex-flow: column wrap;
+	display: grid;
+    grid-template-columns: 1fr;
     background: lightseagreen;
     padding: 1.25em;
 }
